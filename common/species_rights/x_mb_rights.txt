@@ -70,10 +70,7 @@ citizenship_slavery = {
 		custom_tooltip = {
 			fail_text = empire_xenophile
 			from = {
-				NOR = {
-					has_ethic = ethic_xenophile
-					has_ethic = ethic_fanatic_xenophile
-				}
+				is_xenophile = no
 			}
 		}
 		custom_tooltip = {
@@ -88,10 +85,8 @@ citizenship_slavery = {
 			from = {
 				allows_slavery = yes
 				OR = {
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-					has_ethic = ethic_authoritarian
-					has_ethic = ethic_fanatic_authoritarian
+					is_xenophobe = yes
+					is_authoritarian = yes
 					has_ethic = ethic_gestalt_consciousness
 				}
 			}

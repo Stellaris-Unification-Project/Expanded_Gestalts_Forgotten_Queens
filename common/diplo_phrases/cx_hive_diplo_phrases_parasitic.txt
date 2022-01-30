@@ -10,8 +10,10 @@ greetings = {
 		}
 		trigger = {
             has_ai_personality = parasitic_alien
-			NOT = { is_same_species = FROM }
-			NOT = { is_at_war_with = FROM }
+			NOR = {
+				is_same_species = FROM
+				is_at_war_with = FROM
+			}
 			OR = {
 				is_hostile_to = FROM
 				is_unfriendly_to = FROM
@@ -30,8 +32,10 @@ greetings = {
 		}
 		trigger = {
             has_ai_personality = parasitic_alien
-			NOT = { is_same_species = FROM }
-			NOT = { is_at_war_with = FROM }
+			NOR = {
+				is_same_species = FROM
+				is_at_war_with = FROM
+			}
 			OR = {
 				is_hostile_to = FROM
 				is_unfriendly_to = FROM
@@ -50,8 +54,10 @@ greetings = {
 		}
 		trigger = {
             has_ai_personality = parasitic_alien
-			NOT = { is_same_species = FROM }
-			NOT = { is_at_war_with = FROM }
+			NOR = {
+				is_same_species = FROM
+				is_at_war_with = FROM
+			}
 			OR = {
 				is_hostile_to = FROM
 				is_unfriendly_to = FROM
@@ -70,8 +76,10 @@ greetings = {
 		}
 		trigger = {
             has_ai_personality = parasitic_alien
-			NOT = { is_same_species = FROM }
-			NOT = { is_at_war_with = FROM }
+			NOR = {
+				is_same_species = FROM
+				is_at_war_with = FROM
+			}
 			OR = {
 				is_hostile_to = FROM
 				is_unfriendly_to = FROM
@@ -91,8 +99,10 @@ greetings = {
 		}
 		trigger = {
             has_ai_personality = parasitic_alien
-			NOT = { is_same_species = FROM }
-			NOT = { is_at_war_with = FROM }
+			NOR = {
+				is_same_species = FROM
+				is_at_war_with = FROM
+			}
 			OR = {
 				is_hostile_to = FROM
 				is_unfriendly_to = FROM
@@ -111,8 +121,10 @@ greetings = {
 		}
 		trigger = {
             has_ai_personality = parasitic_alien
-			NOT = { is_same_species = FROM }
-			NOT = { is_at_war_with = FROM }
+			NOR = {
+				is_same_species = FROM
+				is_at_war_with = FROM
+			}
 			OR = {
 				is_hostile_to = FROM
 				is_unfriendly_to = FROM
@@ -133,8 +145,10 @@ greetings = {
 		}
 		trigger = {
             has_ai_personality = parasitic_alien
-			NOT = { is_same_species = FROM }
-			NOT = { is_at_war_with = FROM }
+			NOR = {
+				is_same_species = FROM
+				is_at_war_with = FROM
+			}
 			is_threatened_to = FROM
 			FROM = { 
 				NOT = {
@@ -234,10 +248,7 @@ greetings = {
 		trigger = {
                     has_ai_personality = parasitic_alien
 			FROM = {
-				OR = {
-					has_ethic = ethic_egalitarian
-					has_ethic = ethic_fanatic_egalitarian
-				}
+				is_egalitarian = yes
 			}
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -272,10 +283,7 @@ greetings = {
 		trigger = {
                     has_ai_personality = parasitic_alien
 			FROM = {
-				OR = {
-					has_ethic = ethic_authoritarian
-					has_ethic = ethic_fanatic_authoritarian
-				}
+				is_authoritarian = yes
 			}
 			NOT = { is_at_war_with = FROM }
 			is_neutral_to = FROM
@@ -288,10 +296,7 @@ greetings = {
 		trigger = {
                     has_ai_personality = parasitic_alien
 			FROM = {
-				OR = {
-					has_ethic = ethic_egalitarian
-					has_ethic = ethic_fanatic_egalitarian
-				}
+				is_egalitarian = yes
 			}
 			NOT = { is_at_war_with = FROM }
 			is_neutral_to = FROM
@@ -333,10 +338,7 @@ greetings = {
 		trigger = {
                     has_ai_personality = parasitic_alien
 			FROM = {
-				OR = {
-					has_ethic = ethic_authoritarian
-					has_ethic = ethic_fanatic_authoritarian
-				}
+				is_authoritarian = yes
 			}
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -353,10 +355,7 @@ greetings = {
 		trigger = {
                     has_ai_personality = parasitic_alien
 				FROM = {
-				OR = {
-					has_ethic = ethic_egalitarian
-					has_ethic = ethic_fanatic_egalitarian
-				}
+				is_egalitarian = yes
 				NOT = { is_species_class = ROBOT }
 			}
 			NOT = { is_at_war_with = FROM }

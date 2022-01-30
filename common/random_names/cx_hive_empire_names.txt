@@ -22,8 +22,7 @@ empire_name_format = {
 			has_government = "gov_mutualistic_behavior"
 			is_pirate = no
 			is_primitive = no
-			NOT = { is_country_type = fallen_empire }
-			NOT = { is_country_type = awakened_fallen_empire }
+			is_fallen_empire = no
 		}
 	}
 	format = "format.mutualistic_behavior.1"
@@ -59,8 +58,7 @@ empire_name_format = {
 			has_government = "gov_parasitic_alien"
 			is_pirate = no
 			is_primitive = no
-			NOT = { is_country_type = fallen_empire }
-			NOT = { is_country_type = awakened_fallen_empire }
+			is_fallen_empire = no
 		}
 	}
 	format = "format.parasitic_alien.1"
@@ -92,8 +90,7 @@ empire_name_format = {
 			has_government = "gov_hive_farmers"
 			is_pirate = no
 			is_primitive = no
-			NOT = { is_country_type = fallen_empire }
-			NOT = { is_country_type = awakened_fallen_empire }
+			is_fallen_empire = no
 		}
 	}
 	format = "format.hive_farmers.1"

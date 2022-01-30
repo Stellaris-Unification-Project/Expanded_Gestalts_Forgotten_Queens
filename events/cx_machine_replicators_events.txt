@@ -60,7 +60,7 @@ planet_event = {
 		if = {
 			limit = {
 				from = {
-					has_swapped_tradition = tr_harmony_unity_of_self
+					has_active_tradition = tr_harmony_unity_of_self
 				}
 			}
 			from = {
@@ -75,12 +75,16 @@ planet_event = {
 		every_country = {
 			limit = {
 				has_communications = FROM
-				NOT = { is_country = FROM }
-				NOT = { is_same_species = FROMFROM }
-				NOT = { has_ai_personality_behaviour = purger }
-				NOT = { has_origin = origin_necrophage }
-				NOT = { has_ethic = ethic_gestalt_consciousness }
 				NOR = {
+					is_country = FROM
+					is_same_species = FROMFROM
+				}
+				NOR = {
+					has_ai_personality_behaviour = purger
+					has_origin = origin_necrophage
+				}
+				NOR = {
+					has_ethic = ethic_gestalt_consciousness
 					has_valid_civic = civic_death_cult
 					has_valid_civic = civic_death_cult_corporate
 				}

@@ -12,8 +12,9 @@ telepath_drone = {
 		#drone_job_check_trigger  = yes
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
 		OR = {
 			has_trait = trait_latent_psionic
 			has_trait = trait_psionic

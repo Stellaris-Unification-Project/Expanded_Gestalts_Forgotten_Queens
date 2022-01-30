@@ -37,10 +37,7 @@ can_destroy_planet_with_PLANET_KILLER_DIGEST = {
 					is_country_type = primitive
 				}
 				from.owner = {
-					OR = {
-						has_ethic = ethic_xenophobe
-						has_ethic = ethic_fanatic_xenophobe
-					}
+					is_xenophobe = yes
 				}
 			}
 			AND = { # at war with primitive space owner

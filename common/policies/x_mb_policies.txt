@@ -114,8 +114,7 @@ war_philosophy = {
 	potential = {
 		OR = {
 			is_country_type = default
-			is_country_type = fallen_empire
-			is_country_type = awakened_fallen_empire
+			is_fallen_empire = yes
 		}
 	}
 
@@ -139,8 +138,7 @@ war_philosophy = {
 		valid = {
 			NOR = {
 				has_valid_civic = "civic_mutualistic_behavior"
-				has_ethic = "ethic_pacifist"
-				has_ethic = "ethic_fanatic_pacifist"
+				is_pacifist = yes
 				has_valid_civic = "civic_inwards_perfection"
 			}
 		}
@@ -152,10 +150,7 @@ war_philosophy = {
 					has_valid_ai_personality = no
 					is_ai = no
 				}
-				NOT = {
-					has_ethic = "ethic_pacifist"
-					has_ethic = "ethic_fanatic_pacifist"
-				}
+				is_pacifist = no
 			}
 			modifier = {
 				factor = 10
@@ -183,10 +178,7 @@ war_philosophy = {
 			}
 			modifier = {
 				factor = 0
-				OR = {
-					has_ethic = "ethic_pacifist"
-					has_ethic = "ethic_fanatic_pacifist"
-				}
+				is_pacifist = yes
 			}
 		}
 	}
@@ -291,9 +283,7 @@ war_philosophy = {
 		valid = {
 			NOR = {
 				has_ethic = "ethic_fanatic_militarist"
-				has_valid_civic = "civic_fanatic_purifiers"
-				has_valid_civic = "civic_hive_devouring_swarm"
-				has_valid_civic = "civic_machine_terminator"
+				is_homicidal = yes
 			}
 		}
 
@@ -328,10 +318,7 @@ orbital_bombardment = {
 		AI_weight = {
 			modifier = {
 				factor = 0
-				NOR = {
-					has_ethic = "ethic_pacifist"
-					has_ethic = "ethic_fanatic_pacifist"
-				}
+				is_pacifist = no
 				NOT = {
 					is_galactic_community_member = yes
 					OR = {
@@ -360,8 +347,7 @@ orbital_bombardment = {
 		valid = {
 			NOR = {
 				has_valid_civic = civic_mutualistic_behavior
-				has_ethic = "ethic_pacifist"
-				has_ethic = "ethic_fanatic_pacifist"
+				is_pacifist = yes
 			}
 		}
 		AI_weight = {
@@ -418,8 +404,10 @@ purge = {
 		name = "purge_not_allowed"
 
 		valid = {
-			NOT = { has_ethic = ethic_gestalt_consciousness }
-			NOT = { has_valid_civic = "civic_fanatic_purifiers" }
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				has_valid_civic = "civic_fanatic_purifiers"
+			}
 		}
 
 		policy_flags = {
@@ -437,10 +425,7 @@ purge = {
 		modifier = {}
 
 		valid = {
-			NOR = {
-				has_ethic = ethic_xenophile
-				has_ethic = ethic_fanatic_xenophile
-			}
+			is_xenophile = no
 			is_homicidal = no
 		}
 
@@ -472,8 +457,7 @@ purge = {
 			NOT = { is_subject_type = signatory }
 			OR = {
 				has_ethic = ethic_gestalt_consciousness
-				has_ethic = ethic_xenophobe
-				has_ethic = ethic_fanatic_xenophobe
+				is_xenophobe = yes
 				NOT = {  has_valid_civic = civic_mutualistic_behavior }
 				has_menace_perk = menp_undertaker	# Unlocked with Crisis Level 1
 			}
@@ -488,10 +472,7 @@ purge = {
 			}
 			modifier = {
 				factor = 0
-				OR = {
-					has_ethic = ethic_pacifist
-					has_ethic = ethic_fanatic_pacifist
-				}
+				is_pacifist = yes
 			}
 			modifier = {
 				factor = 0

@@ -46,7 +46,7 @@ pop_event = {
 				change_scoped_species = yes
 				# change only this pop's species
 			}
-			change_species = last_created
+			change_species = last_created_species
                 }
 		set_update_modifiers_batch = end
 	}

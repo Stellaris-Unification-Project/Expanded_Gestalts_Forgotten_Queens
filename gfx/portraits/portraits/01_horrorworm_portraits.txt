@@ -177,8 +177,10 @@ portrait_groups = {
 		leader = { #scientists, generals, admirals, governor
 			add = {
 				trigger = {
-					NOT = { leader_class = scientist }
-					NOT = { leader_class = general }
+					NOR = {
+						leader_class = scientist
+						leader_class = general
+					}
 					NOT = { leader_class = admiral }
 				}
 				portraits = {

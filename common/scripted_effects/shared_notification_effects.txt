@@ -3,7 +3,7 @@ set_updated_mod = {
 	if = {
 		limit={
 		has_global_flag = complex_story
-		NOT = { story_up_to_date = yes }
+		story_up_to_date = no
 		}
 		set_timed_country_flag = { flag = story_updated days = 91 }
 	}
@@ -12,7 +12,7 @@ set_updated_mod = {
 	if = {
 		limit={
 		has_global_flag = complex_hive
-		NOT = { fq_up_to_date = yes }
+		fq_up_to_date = no
 		}
 	set_timed_country_flag = { flag = fq_updated days = 91 }
 
@@ -22,7 +22,7 @@ set_updated_mod = {
 	if = {
 		limit={
 		has_global_flag = complex_copack
-		NOT = { copack_up_to_date = yes }
+		copack_up_to_date = no
 		}
 	set_timed_country_flag = { flag = copack_updated days = 91 }
 	}
@@ -33,21 +33,21 @@ set_complex_up_to_date = {
 	if = {
 		limit = { 
 			has_global_flag = complex_copack
-			NOT = { copack_up_to_date = yes }
+			copack_up_to_date = no
 			}
 		set_variable = { which = current_copack_version  value = latest_copack_version }	
 	}
 	if = {
 		limit = { 
 			has_global_flag = complex_story
-			NOT = { story_up_to_date = yes }
+			story_up_to_date = no
 			}
 		set_variable = { which = current_story_version  value = latest_story_version }	
 	}
 	if = {
 		limit = { 
 			has_global_flag = complex_hive
-			NOT = { fq_up_to_date = yes }
+			fq_up_to_date = no
 			}
 		set_variable = { which = current_fq_version  value = latest_fq_version }	
 	}

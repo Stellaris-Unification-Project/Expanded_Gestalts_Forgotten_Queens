@@ -6,9 +6,11 @@ cx_hive_cocoon = {
 	building_icon = building_cocoons_plant
 
 		
+	possible_precalc = can_fill_drone_job
+
+		
 	possible = {
-		drone_job_check_trigger  = yes
-	}
+		}
 	
 	planet_modifier = {
 		planet_pop_assembly_add = 1

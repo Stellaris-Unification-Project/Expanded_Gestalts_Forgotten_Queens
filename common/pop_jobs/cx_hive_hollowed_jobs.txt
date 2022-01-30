@@ -6,9 +6,10 @@ queen_drone = {
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_spawning_pool
 		
+	possible_precalc = can_fill_drone_job
+		
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 	
 
 	planet_modifier = {

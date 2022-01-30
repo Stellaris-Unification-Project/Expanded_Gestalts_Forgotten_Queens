@@ -10,8 +10,10 @@ purge_normal = {
 	potential = {
 		exists = from
 		from = { 
-		NOT = { has_valid_civic = civic_hive_devouring_swarm } 
-		NOT = { has_valid_civic = civic_mutualistic_behavior }
+		NOR = {
+			has_valid_civic = civic_hive_devouring_swarm
+			has_valid_civic = civic_mutualistic_behavior
+		}
 		}
 	}
 	
@@ -113,8 +115,10 @@ purge_processing = {
 		host_has_dlc = "Utopia"
 		exists = from
 		from = { 
-			NOT = { has_authority = auth_machine_intelligence }
-			NOT = { has_valid_civic = civic_mutualistic_behavior }
+			NOR = {
+				has_authority = auth_machine_intelligence
+				has_valid_civic = civic_mutualistic_behavior
+			}
 		}
 	}
 	

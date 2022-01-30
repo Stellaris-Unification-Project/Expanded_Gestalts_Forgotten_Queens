@@ -44,7 +44,7 @@ event = {
 	immediate = {
 		create_complex_country = yes
 		event_target:complex_event_country = {set_complex_up_to_date = yes}
-		every_country = {
+		every_playable_country = {
 			limit = {
 				is_ai = no
 			}		
@@ -76,7 +76,7 @@ event = {
 				}
 				event_target:complex_event_country = {set_updated_mod = yes}
 				event_target:complex_event_country = {set_complex_up_to_date = yes}
-				every_country = {
+				every_playable_country = {
 							limit = {
 								is_ai = no
 							}

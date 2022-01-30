@@ -25,7 +25,7 @@ building_recycling_center = {
 		has_branch_office = yes
 		branch_office_owner = { 
 		has_valid_civic = civic_mutualistic_behavior	
-		NOT = { is_organic = yes}
+		is_organic = no
 		}
 	}
 	
@@ -72,7 +72,7 @@ building_targeted_flora = {
 		has_branch_office = yes
 		branch_office_owner = { 
 		has_valid_civic = civic_mutualistic_behavior	
-		NOT = { is_organic = yes}
+		is_organic = no
 		}
 	}
 	
@@ -120,7 +120,7 @@ building_targeted_fauna = {
 		has_branch_office = yes
 		branch_office_owner = { 
 		has_valid_civic = civic_mutualistic_behavior	
-		NOT = { is_organic = yes}	
+		is_organic = no	
 		}
 	}
 	
@@ -167,7 +167,7 @@ building_observatory = {
 		has_branch_office = yes
 		branch_office_owner = { 
 		has_valid_civic = civic_mutualistic_behavior	
-		NOT = { is_organic = yes}	
+		is_organic = no	
 		}
 	}
 	
@@ -196,8 +196,7 @@ building_observatory = {
 			factor = 3
 			branch_office_owner = { 
 				used_naval_capacity_percent > 0.8
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
+				is_militarist = yes
 			}
 		}
 	}
@@ -213,7 +212,7 @@ building_foreign_arquitecture = {
 		has_branch_office = yes
 		branch_office_owner = { 
 		has_valid_civic = civic_mutualistic_behavior	
-		NOT = { is_organic = yes}	
+		is_organic = no	
 		}
 	}
 	
@@ -250,7 +249,7 @@ building_species_protector_center = {
 		has_branch_office = yes
 		branch_office_owner = { 
 		has_valid_civic = civic_mutualistic_behavior	
-		NOT = { is_organic = yes}	
+		is_organic = no	
 		}
 	}
 	
@@ -267,7 +266,7 @@ building_species_protector_center = {
 		}
 	show_tech_unlock_if = {
 		has_valid_civic = civic_mutualistic_behavior
-		NOT = { is_organic = yes}
+		is_organic = no
 	}
 		
 	resources = {
@@ -298,7 +297,7 @@ building_urban_maintenance = {
 		has_branch_office = yes
 		branch_office_owner = { 
 		has_valid_civic = civic_mutualistic_behavior	
-		NOT = { is_organic = yes}	
+		is_organic = no	
 		}
 	}
 	
@@ -350,7 +349,7 @@ building_tourism_campaign = {
 		has_branch_office = yes
 		branch_office_owner = { 
 		has_valid_civic = civic_mutualistic_behavior		
-		NOT = { is_organic = yes}
+		is_organic = no
 		}
 	}
 	
@@ -587,8 +586,7 @@ building_organic_observatory = {
 			factor = 3
 			branch_office_owner = { 
 				used_naval_capacity_percent > 0.8
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
+				is_militarist = yes
 			}
 		}
 	}
@@ -863,7 +861,7 @@ building_necroid_outworld_mortuary = {
 		has_branch_office = yes
 		branch_office_owner = { 
 		has_valid_civic = civic_mutualistic_behavior		
-		NOT = { is_organic = yes}
+		is_organic = no
 		is_species_class = NECROID
 		}
 	}
