@@ -180,8 +180,8 @@ portrait_groups = {
 					NOR = {
 						leader_class = scientist
 						leader_class = general
+						leader_class = admiral
 					}
-					NOT = { leader_class = admiral }
 				}
 				portraits = {
 					horrorworm_high_01 

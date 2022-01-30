@@ -86,12 +86,8 @@ planet_event = {
 				NOR = {
 					is_country = FROM
 					is_same_species = FROMFROM
-				}
-				NOR = {
 					has_ai_personality_behaviour = purger
 					has_origin = origin_necrophage
-				}
-				NOR = {
 					has_ethic = ethic_gestalt_consciousness
 					has_valid_civic = civic_death_cult
 					has_valid_civic = civic_death_cult_corporate

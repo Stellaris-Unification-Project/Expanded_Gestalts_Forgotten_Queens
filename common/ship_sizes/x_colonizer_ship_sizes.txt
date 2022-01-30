@@ -75,8 +75,8 @@ colonizer = {
 					NOR = {
 						has_origin = origin_tree_of_life
 						has_origin = origin_hive_cx_hive_world
+						has_origin = origin_hive_overmind
 					}
-					NOT = { has_origin = origin_hive_overmind }
 				}
 			}
 			alloys = 200
@@ -135,8 +135,8 @@ colonizer = {
 					NOR = {
 						has_origin = origin_tree_of_life
 						has_origin = origin_hive_cx_hive_world
-					}
-					NOT = { has_origin = origin_hive_overmind }					
+						has_origin = origin_hive_overmind
+					}					
 				}
 			}
 			alloys = 200
